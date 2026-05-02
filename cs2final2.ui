@@ -1,0 +1,5751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>924</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1140</width>
+    <height>924</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1140</width>
+    <height>924</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1141</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_ADD">
+     <widget class="QLabel" name="label_ADDTitle">
+      <property name="geometry">
+       <rect>
+        <x>465</x>
+        <y>50</y>
+        <width>211</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add a New Patient</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ADDfirstName">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>200</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>First Name:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ADDlastName">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>280</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Last Name:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ADDage">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>360</y>
+        <width>60</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Age:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_ADDFirstName">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>200</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_ADDLastName">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>280</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_ADDAge">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>360</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ADDAddPatient">
+      <property name="geometry">
+       <rect>
+        <x>398</x>
+        <y>640</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add Patient</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ADDBack">
+      <property name="geometry">
+       <rect>
+        <x>631</x>
+        <y>640</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ADDNotes">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>440</y>
+        <width>60</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Notes:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_ADDNotes">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>440</y>
+        <width>231</width>
+        <height>131</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_firstNameError">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>242</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: red</string>
+      </property>
+      <property name="text">
+       <string>Invalid First Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lastNameError">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>322</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Last Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ageError">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>402</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Age</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_calendar">
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1161</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>-30</x>
+        <y>124</y>
+        <width>1241</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_vertical">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>0</y>
+        <width>2</width>
+        <height>620</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>62</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>186</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_addPatient">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>660</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Add Patient</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label9AM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>2</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>9:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_newBooking">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>660</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>New Booking</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_dropdownConfirm">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>614</x>
+        <y>690</y>
+        <width>201</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <widget class="QComboBox" name="comboBox_patients">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_times">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>161</width>
+         <height>26</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_confirm">
+       <property name="geometry">
+        <rect>
+         <x>44</x>
+         <y>97</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_timeSlotFull">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>138</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: red</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>248</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>434</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>620</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>558</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>372</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>310</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>496</y>
+        <width>1151</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10AM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>64</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>10:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11AM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>126</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>11:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>188</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>12:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>250</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>1:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>312</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>2:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>374</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>3:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>498</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>5:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>436</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>4:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6PM">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>560</y>
+        <width>165</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>6:00</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_9_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_13">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_14">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_9_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_17">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_18">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_9_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_25">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_26">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_9_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_29">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_30">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_9_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_33">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_34">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_9_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_41">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_42">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_9_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>2</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_9_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_81">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_82">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_15">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_16">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_19">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_20">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_31">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_32">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_43">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_44">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_83">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_84">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_85">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_86">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_87">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_88">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_89">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_90">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_0">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_0">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_91">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_92">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_93">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_94">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_95">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_96">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_97">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_98">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_101">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_102">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_103">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_104">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_10_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>64</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_10_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_105">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_106">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_107">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_108">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_109">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_110">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_113">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_114">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_115">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_116">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_117">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_118">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>126</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_11_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_119">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_120">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_121">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_122">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_125">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_126">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_127">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_128">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_129">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_130">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_131">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_132">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_12_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>188</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_12_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_133">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_134">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_135">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_136">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_137">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_138">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_139">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_140">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_141">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_142">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_143">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_144">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_1_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>250</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_1_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_145">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_146">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_147">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_148">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_149">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_150">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_151">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_152">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_153">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_154">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_155">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_156">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>312</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_2_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_157">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_158">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_161">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_162">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_163">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_164">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_165">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_166">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_167">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_168">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_169">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_170">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>374</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_3_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_171">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_172">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_173">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_174">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_175">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_176">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_177">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_178">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_179">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_180">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_181">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_182">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>436</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_4_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_183">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_184">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_185">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_186">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_187">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_188">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_189">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_190">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_191">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_192">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_193">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_194">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>498</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_5_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_195">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_196">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_1">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_1">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_197">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_198">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_2">
+      <property name="geometry">
+       <rect>
+        <x>443</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_199">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_200">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_3">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_201">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_202">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_4">
+      <property name="geometry">
+       <rect>
+        <x>721</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_4">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_203">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_204">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_5">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_5">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_205">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_206">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6_6">
+      <property name="geometry">
+       <rect>
+        <x>999</x>
+        <y>560</y>
+        <width>141</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #E57373</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="pushButton_6_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>15</y>
+         <width>113</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_207">
+       <property name="geometry">
+        <rect>
+         <x>139</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_208">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: black</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_appointmentInfo">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>29</y>
+        <width>761</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_appointmentInfo">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>70</y>
+         <width>161</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>Appointment Info</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientInfo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>140</y>
+         <width>81</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>Patient Info:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientName">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>200</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>Patient Name:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientAge">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>280</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>Age:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientNotes">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>360</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>Notes:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientAppointmentTime">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>520</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>Appointment Time: </string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ok">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>600</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    border: 2px solid black;
+    border-radius: 5px; color: black</string>
+       </property>
+       <property name="text">
+        <string>Ok</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_cancelAppointment">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>600</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    border: 2px solid black;
+    border-radius: 5px; background-color: red</string>
+       </property>
+       <property name="text">
+        <string>Cancel Appointment</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_notes">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>360</y>
+         <width>300</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientNameAutoUpdate">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>200</y>
+         <width>300</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientAgeAutoUpdate">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>280</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_patientAppointmentTimeAutoUpdate">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>520</y>
+         <width>221</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1140</width>
+     <height>34</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
